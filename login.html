@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <script src="js/all.min.js"></script>
+</head>
+<body>
+     <!-- navigation section of the page -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo"><img class="img" src="logo.png" alt="logo">GroKart</div>
+                <div class="tabs">
+                    <ul class="links">
+                        <li><a class="li" href="GroKart.html"><i class="fa-solid fa-house"></i>Home</a></li>
+                        <li><a class="li" href="features.html">Features</a></li>
+                        <li><a class="li" href="feedback.html">Feedback</a></li>
+                        <button class="login" type="button" onclick="location.href='login.html'">Login</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navigation section of the page -->
+
+    <section class="mainbox">
+        <main class="innerbox">
+            <div class="heading">
+                <H1>LogIn</H1>
+            </div>
+            <div class="form">
+                <form action="">
+                    <label for="username">User Name</label>
+                    <input type="text" id="username" placeholder="Type username" required>
+
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Type password" required>
+
+                    <button type="button" class="btn" id="btn">Login</button>
+                </form>
+            </div>
+            <div class="downsec">
+                <p>Forgot password?<a href="#">Click here</a></p>
+                <p>Don't have an account?<a href="signup.html">Sign up</a></p>
+            </div>
+        </main>
+    </section>
+
+    <!-- footer section.................................. -->
+    <footer class="footer">
+        <div class="info">
+            <ul>
+                <li class="had">Information</li>
+                <li><a href="about us.html">About Us</a></li>
+                <li><a href="locateUs.html">Locate Us</a></li>
+                <li><a href="#">FAQs</a></li>
+            </ul>
+        </div>
+        <div class="contactUs">
+            <p class="had">Address</p>
+            <pre>Suprakandi, Dist.- Karimganj,
+                 Assam(INDIA)
+                       788711</pre>
+            <ul><li class="had">Contact Us</li>
+                <li>E-Mail: <a href="#">customercare@grokart.com</a></li>
+                <li>Telephone: 156716xxxx</li>
+            </ul>
+        </div>
+        <div class="icons">
+            <p class="had">Follow Us on Social Media</p>
+            <a href="https://www.facebook.com/profile.php?id=61557250018012"><img src="fb.png" alt="" class="social1"></a><br>
+            <a href="#instagram.com"><img src="insta.png" alt="" class="social2"></a><br>
+            <a href="#x.com"><img src="twiter.png" alt="" class="social3"></a><br>
+        </div>
+    </footer>
+    <address>
+        <p class="copyright">&#169 2024 GroKart Pvt. Ltd. Karimganj. All Rights Researved.</p>
+    </address>
+
+    <script>
+        document.getElementById("btn").addEventListener("click",function(){
+            localStorage.setItem("username", document.getElementById("username"));
+            localStorage.setItem("password", document.getElementById("password"));
+
+            window.location.href="GroKart.html";
+
+            alert("You have successfully logged in");
+        });
+    </script>
+</body>
+</html>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .logo{
+    width: 200px;
+    height: 80px;
+    background-color: #e8fce5;
+    margin: 1px 0px;
+}
+.searchbar{
+    width: 400px;
+    height: 80px;
+    background-color: #e8fce5;
+    margin: 1px 0px;
+}
+.tabs{
+    width: fit-content;
+    height: 80px;
+    background-color: #e8fce5;
+    margin: 1px 0px;
+}
+
+.container{
+    display: flex;
+    background: transparent;
+    box-shadow: 2px 2px 10px grey;
+    width: 100%;
+    background-color: #e8fce5;
+    justify-content: space-between;
+}
+.header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+@font-face{
+    font-family: poppins;
+    src:url("Poppins-Medium.ttf")
+}
+.img{
+    background: transparent;
+    height: 50px;
+    width: 50px;
+}
+.logo{
+    font-size: 2em;
+    color: rgb(7, 208, 7);
+    font-family: poppins;
+    text-align: center;
+    padding: 8px 0;
+}
+
+.tabs .links{
+    display: flex;
+    list-style: none;
+    font-size: 1.2em;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    background: transparent;
+}
+.tabs .links a{
+    padding: 0 0.5em;
+    text-decoration: none;
+    background: transparent;
+    color: rgb(207, 139, 4);
+    font-family: poppins;
+}
+.tabs .links li{
+    background: transparent;
+}
+.tabs .links a:hover{
+    color: blue;
+    text-decoration: 5px rgb(207, 139, 4) dotted underline;
+}
+
+.links .login{
+    height: 5vh;
+    width: 9vh;
+    font-size: 18px;
+    background-color: rgb(34, 79, 227);
+    border: none;
+    border-radius: 45%;
+    color: #fff;
+    cursor: pointer;
+    font-family: poppins;
+    margin-right: 2vh;
+}
+.links .login:hover{
+    background-color: #fff;
+    color: rgb(34, 79, 227);
+    border: 2px solid rgb(34, 79, 227);
+}
+.fa-house{
+    color: rgb(207, 139, 4);
+    padding-right: .2em;
+    font-size: .9em;
+    background-color: transparent;
+}
+
+/* ...........................Above section is header............................. */
+
+    .mainbox{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 83.2vh;
+        width: auto;
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .innerbox{
+        height: 70vh;
+        width: 60vh;
+        padding: 4vh 5vh;
+        margin: 10vh 0;
+        border-radius: 15px;
+        background-color: rgba(92, 4, 174, 0.28);
+        backdrop-filter: blur(5px);
+        box-shadow: 2px 2px 10px rgb(10, 10, 10);
+        border: .5px solid #dddbdbbd;
+        
+    }
+    .innerbox .form input{
+        display: block;
+        width: 100%;
+        height: 5vh;
+        border: 1.5px solid #fff;
+        border-radius: 15px;
+        padding: 0 1.5vh;
+        font-size: 16px;
+        margin-bottom: 6px;
+        background: none;
+        outline: none;
+        color: #fff;
+    }
+    .innerbox .heading{
+        text-align: center;
+        font-size: 22px;
+        font-weight: bolder;
+        margin-bottom: 4vh;
+        margin-top: 3vh;
+        color:greenyellow;
+        font-family: 'Times New Roman';
+    }
+    .innerbox .form label{
+        margin-bottom: 4px;
+        color: yellow;
+        font-family: poppins;
+        font-weight: 200;
+    }
+    .innerbox .form .btn{
+        width: 100%;
+        height: 5vh;
+        font-size: 18px;
+        margin: 2vh 0;
+        border-radius: 15px;
+        border:none;
+        background-color: rgb(237, 199, 7);
+        color: #0c059a;
+        cursor: pointer;
+        font-weight: bold;
+    }
+    .innerbox .form .btn:hover{
+        background-color: rgb(165, 229, 4);
+    }
+    .innerbox .downsec{
+        margin: 4vh 0 0 0;
+    }
+    .innerbox .downsec p{
+        margin: 1vh 0 0 0;
+        text-align: center;
+        color: #fff;
+        font-size: 19px;
+    }
+    .innerbox .downsec a{
+        text-decoration: none;
+        color: greenyellow;
+    }
+    .innerbox .downsec a:hover{
+        color: rgb(114, 252, 240);
+    }
+
+    ::placeholder{
+        color: #ffffff86;
+        transition: .25s;
+    }
+    :focus::placeholder{
+        color: transparent;
+    }
+
+
+     /* footer................................................................. */
+     .footer{
+        width: 100%;
+        height: 40vh;
+        background-color: rgb(1, 50, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        position: relative;
+    }
+
+    .info,.contactUs,.icons{
+        width: 60vh;
+        height: 35vh;
+        background: transparent;
+        font-family: poppins;
+        font-size: 16px;
+    }
+    .info a{
+        background: transparent;
+        color: #fff;
+
+    }
+    .contactUs a{
+        background: transparent;
+        color: #fff;
+    }
+    .info li{
+        margin: 1vh;
+        font-size: 1.1em;
+        background: transparent;
+    }
+    .info ul{
+        margin: 0 40vh 0 0;
+        background: transparent;
+        list-style: none;
+        text-decoration: none;
+    }
+    .contactUs li{
+        margin: 1vh;
+        font-size: 1.1em;
+        background: transparent;
+    }
+    .contactUs ul{
+        margin: 0 20vh 0 0;
+        background: transparent;
+        list-style: none;
+        text-decoration: none;
+    }
+    .icons li{
+        background: transparent;
+    }
+
+    .footer .had{
+        font-weight: 600;
+        background: transparent;
+        font-size: 20px;
+    }
+    .info a:hover{
+        color: darkorange;
+    }
+    .contactUs a:hover{
+        color: darkorange;
+    }
+    .contactUs pre{
+        background: transparent;
+        color: #fff;
+        font-size: 18px;
+    }
+
+
+    .icons .social1,.social2,.social3{
+        height: 50px;
+        width: 50px;
+        background: transparent;
+    }
+    .icons .social1{
+        position: absolute;
+        top: 80px;
+        right: 240px;
+    }
+    .icons .social2{
+        position: absolute;
+        top: 80px;
+        right: 300px;
+    }
+    .icons .social3{
+        position: absolute;
+        top: 80px;
+        right: 360px;
+    }
+    .icons a{
+        background-color: transparent;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    address{
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+    }
+
+</style>
