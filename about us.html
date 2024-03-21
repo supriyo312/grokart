@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+</head>
+<body>
+    <!-- navigation section of the page -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo"><img class="img" src="logo.png" alt="logo">GroKart</div>
+                <div class="tabs">
+                    <ul class="links">
+                        <li><a class="li" href="GroKart.html">Home</a></li>
+                        <li><a class="li" href="features.html">Features</a></li>
+                        <li><a class="li" href="feedback.html">Feedback</a></li>
+                        <button class="login" type="button" onclick="location='login.html'">Login</button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- navigation section of the page -->
+
+    <main>
+        <section>
+            <aside class="leftSide">
+                <h1>About Us</h1>
+                <p>Welcome to our online grocery store! We are a team of four passionate individuals dedicated to revolutionizing your grocery shopping experience. Meet the minds behind the screen:
+                </p>
+                <button type="button">Learn more</button>
+            </aside>
+            <article>
+                <div class="person1">
+                    <img src="About Us img.jpg" class="img1">
+                    <p><b>Supriyo</b> : With his keen eye for quality and efficiency, he ensures that every product meets our highest standards before it reaches your doorstep.
+                    </p>
+                </div>
+                <div class="person2">
+                    <img src="parthib.jpg" class="img1">
+                    <p><b>Parthib</b> : As our tech-savvy guru, he is constantly innovating our website to provide you with a seamless and user-friendly shopping experience.
+                    </p>
+                </div>
+                <div class="person3">
+                    <img src="rahul.jpg" class="img1">
+                    <p><b>Rahul</b> : Rahul's expertise in logistics guarantees that your orders are handled with care and delivered to you promptly, ensuring freshness and satisfaction with every purchase.
+                    </p>
+                </div>
+                <div class="person4">
+                    <img src="bulti.jpg" class="img1">
+                    <p><b>Bulti</b> : With her commitment to customer service, she ensures that your queries are promptly addressed and that you receive the personalized attention you deserve.
+                    </p>
+                </div>
+                <div class="downSec">
+                    <p>Together, we strive to bring you a diverse selection of high-quality products, competitive prices, and exceptional service. Thank you for choosing us for your grocery needs. Happy shopping!</p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <div class="locateUs">
+        <p class="had">Address</p>
+        <hr>
+            <pre>Suprakandi, Dist.- Karimganj,
+Assam(INDIA)
+788711</pre>
+    </div>
+
+    <address>
+        <p class="copyright">&#169 2024 GroKart Pvt. Ltd. Karimganj. All Rights Researved.</p>
+    </address>
+</body>
+</html>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url("about us bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+@font-face{
+    font-family: poppins;
+    src:url("Poppins-Medium.ttf")
+}
+@font-face{
+    font-family: poppinsLight;
+    src:url("Poppins-Light.ttf")
+}
+.logo{
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    margin: 1px 0px;
+    font-size: 2em;
+    color: rgb(7, 208, 7);
+    font-family: poppins;
+    text-align: center;
+    padding: 8px 0;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.container .tabs{
+    width: 690px;
+    height: 80px;
+    background-color: transparent;
+    margin: 1px 0px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+.container{
+    display: flex;
+    background: transparent;
+    width: 100%;
+    background-color: transparent;
+    position: relative;
+    justify-content: space-between;
+}
+.header{
+    position: sticky;
+    top: 0px;
+    backdrop-filter: blur(1px);
+    background-color: transparent;
+    background-image: url("about\ us\ bg.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 4px;
+}
+.img{
+    background: transparent;
+    height: 50px;
+    width: 50px;
+}
+.tabs .links{
+    display: flex;
+    list-style: none;
+    font-size: 1.4em;
+    padding: 1em 1em;
+    background: transparent;
+    float: right;
+}
+.tabs .links .li{
+    padding: 0 0.5em;
+    text-decoration: none;
+    background: transparent;
+    color: rgb(252, 252, 252);
+    font-family: poppins;
+}
+.tabs .links li{
+    background: transparent;
+}
+.tabs .links a:hover{
+    color: rgb(136, 255, 0);
+    text-decoration: 5px rgb(255, 255, 255) dotted underline;
+}
+.links .login{
+    height: 5vh;
+    padding: 0 6px 0 6px;
+    width: auto;
+    font-size: 18px;
+    background-color: rgb(34, 79, 227);
+    border: none;
+    border-radius: 45%;
+    color: #fff;
+    cursor: pointer;
+    font-family: poppins;
+}
+.links .login:hover{
+    background-color: #fff;
+    color: rgb(34, 79, 227);
+    border: 2px solid rgb(34, 79, 227);
+}
+/* ...........................Above section is header............................. */
+section{
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+}
+section .leftSide{
+    height: 60vh;
+    width: 40%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    padding: 6px;
+    text-align: center;
+}
+section .leftSide h1{
+    font-size: 10vh;
+    color: aqua;
+}
+section .leftSide p{
+    font-size: 22px;
+    margin-bottom: 6px;
+    color: blanchedalmond;
+    font-family: poppinsLight;
+}
+section .leftSide button{
+    width: 30%;
+    height: 10%;
+    font-size: 18px;
+    color: blue;
+    background-color: beige;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0 auto 0 auto;
+}
+section .leftSide button:hover{
+    background-color: darkcyan;
+    color: #fff;
+    box-shadow: inset 2px 2px 5px floralwhite,
+                inset -2px -2px 5px rgb(0, 18, 18);
+}
+article{
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+}
+article .person1{
+    height: 40vh;
+    width: 100%;
+    margin: 4px 0 4px 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+article .person2{
+    height: 40vh;
+    width: 100%;
+    margin: 4px 0 4px 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+article .person3{
+    height: 40vh;
+    width: 100%;
+    margin: 4px 0 4px 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+article .person4{
+    height: 40vh;
+    width: 100%;
+    margin: 4px 0 4px 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+article .person1 .img1{
+    height: 30vh;
+    width: 30vh;
+    margin: 5vh 10vh 5vh 10vh;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+article .person1 p{
+    float: right;
+    font-size: 22px;
+    font-family: poppinsLight;
+    color: azure;
+    width: 98vh;
+    height: fit-content;
+    
+}
+article .person2 .img1{
+    height: 30vh;
+    width: 30vh;
+    margin: 5vh 10vh 5vh 10vh;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+article .person2 p{
+    float: right;
+    font-size: 22px;
+    font-family: poppinsLight;
+    color: azure;
+    width: 98vh;
+    height: fit-content;
+}
+article .person3 .img1{
+    height: 30vh;
+    width: 30vh;
+    margin: 5vh 10vh 5vh 10vh;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+article .person3 p{
+    float: right;
+    font-size: 22px;
+    font-family: poppinsLight;
+    color: azure;
+    width: 98vh;
+    height: fit-content;
+}
+article .person4 .img1{
+    height: 30vh;
+    width: 30vh;
+    margin: 5vh 10vh 5vh 10vh;
+    border-radius: 50%;
+    border: 2px solid green;
+}
+article .person4 p{
+    float: right;
+    font-size: 22px;
+    font-family: poppinsLight;
+    color: azure;
+    width: 98vh;
+    height: fit-content;
+}
+article .downSec{
+    height: fit-content;
+    width: 150vh;
+    font-size: 28px;
+    color: rgb(252, 239, 0);
+    text-align: center;
+    margin: auto;
+    padding: 12vh;
+    font-family: poppins;
+}
+article .person1 b{
+    color: rgb(252, 239, 0);
+}
+article .person2 b{
+    color: rgb(252, 239, 0);
+}
+article .person3 b{
+    color: rgb(252, 239, 0);
+}
+article .person4 b{
+    color: rgb(252, 239, 0);
+}
+.locateUs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30vh;
+    width: fit-content;
+    margin: 0 auto 2vh auto;
+    background-color: rgba(183, 195, 195, 0.186);
+    font-size: 25px;
+    padding: 1vh;
+    backdrop-filter: blur(3px);
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: #fff;
+}
+.locateUs hr{
+    width: 100%;
+    height: 4px;
+    margin: 4px 0 6px 0;
+    border: 2px solid rgb(252, 239, 0);
+}
+.locateUs p{
+    font-family: poppins;
+    font-size: 25px;
+}
+address .copyright{
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 4px 0 4px 0;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    bottom: 0;
+}
+</style>
