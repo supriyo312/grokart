@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+</head>
+<body>
+    <!-- navigation section of the page -->
+    <header class="header">
+       <div class="container">
+            <div class="logo">
+                <img class="img" src="logo.png" alt="logo">
+            </div>
+            <div class="tabs"> 
+                <button type="button" onclick="location='login.html'">Login</button>
+            </div>
+        </div>
+    </header>
+    <!-- navigation section of the page -->
+
+    <main>
+        <section>
+            <div class="text">
+                <h1>GroKart</h1>
+                <p>Welcome to GroKart. Your ultimate online grocery store for quality produce, pantry staples, and household essentials, all delivered to your doorstep with ease and convenience. Shop now and experience freshness like never before!</p>
+
+                <button type="button" onclick="location.href='GroKart.html'">Shop Now</button>
+            </div>
+
+        </section>
+    </main>
+    
+</body>
+</html>
+
+<style>
+    body{
+        background-image: url("landing\ page\ bg.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: poppins;
+    src:url("Poppins-Medium.ttf")
+}
+@font-face{
+    font-family: poppinsLight;
+    src:url("Poppins-Light.ttf")
+}
+.header .container .logo{
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    margin: 1px 0px;
+    padding: 8px 0;
+    display: inline-block;
+}
+.header .container .logo .img{
+    background: transparent;
+    height: 50px;
+    width: 50px;
+}
+.header .container .tabs{
+    float: right;
+}
+.header .container .tabs button{
+    margin: 3vh;
+    height: fit-content;
+    width: fit-content;
+    font-size: 22px;
+    background-color: transparent;
+    outline: none;
+    color: aliceblue;
+    border-radius: 30px;
+    padding: .2vh 1vh .2vh 1vh;
+    cursor: pointer;
+    border: 1px solid aqua;
+}
+.header .container .tabs button:hover{
+    box-shadow: 2px 0px 5px aqua,
+    -2px -0px 5px aqua;
+}
+
+/* ...........................Above section is header............................. */
+
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+main section{
+    height: 85vh;
+    width: 90%;
+    background-image: url("landing\ cover.png");
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 2px 2px 5px green;
+    border: 1px solid greenyellow;
+    background-color: rgba(53, 53, 55, 0.219);
+}
+main section .text{
+    height: fit-content;
+    width: 40%;
+    float: right;
+    position: relative;
+    top: 10%;
+    text-align: center;
+}
+main section .text h1{
+    color: greenyellow;
+    font-family: poppins;
+    font-size: 10vh;
+    animation: indexAni 1s infinite alternate;
+}
+main section .text p{
+    color: rgb(246, 239, 58);
+    font-family: poppins;
+    font-size: 18px;
+}
+
+main section .text button{
+    margin: 10vh auto 0 auto;
+    height: 6vh;
+    width: 20vh;
+    border-radius: 10px;
+    font-size: 22px;
+    color: gold;
+    background-color: rgb(83, 4, 157);
+    border: 2px inset aqua;
+    cursor: pointer;
+}
+main section .text button:hover{
+    background-color: rgb(67, 3, 126);
+    box-shadow: 0 0 6px aqua;
+}
+
+
+@keyframes indexAni{
+    0%  {text-shadow: 0 0 5px rgb(4, 10, 180), 0 0 5px #fff, 0 0 15px #bfe6fb, 0 0 20px #fff;}
+    50% {text-shadow: 0 0 10px rgb(4, 10, 180), 0 0 10px #fff, 0 0 30px #bfe6fb, 0 0 40px #fff;}
+    100%  {text-shadow: 0 0 5px rgb(4, 10, 180), 0 0 5px #fff, 0 0 15px #bfe6fb, 0 0 20px #fff;}
+    
+}
+
+
+
+</style>
